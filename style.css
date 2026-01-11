@@ -7,6 +7,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #beaa66;
+  margin: 0%;
+  border-width: 1px;
+  border-style: solid;
+
 }
 
 .context {
@@ -14,8 +18,7 @@ body {
   padding: 20px;
   text-align: center;
   font-size: 25px;
-  border: #000000 solid 2px;
-}
+} 
 
 .header {
   display: flex;
@@ -28,7 +31,50 @@ body {
   font-size: 15px;
 }
 
+.menu {
+    display: flex;
+    gap: 20px;
+}
 
+.dropdown {
+    position: relative;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+}
+
+/* Links internos */
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Mostrar al pasar el cursor */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Hover bonito */
+.dropdown-content a:hover {
+    background: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* 🔑 clave */
+    gap: 20px;
+}
 
 .niño_jesus {
     background-color: green;
@@ -39,7 +85,6 @@ body {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  border: #000000;
 }
 
 .link:hover {
@@ -84,11 +129,10 @@ body {
   padding: 10px;
   height: 150px;
   background-color: #3b5b8c;
-  border: #000000 solid 2px;
 }
 
 .row {
-  border: #000000 solid 2px;
+  
 }
 
 .row:after {
