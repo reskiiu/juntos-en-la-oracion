@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+  
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #beaa66;
+}
+
+.context {
+  background-color: #6f8a9b;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  border: #000000 solid 2px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/layout.jpg);
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
+.niño_jesus {
+    background-color: green;
+}
+
+.link {
+  margin: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border: #000000;
+}
+
+.link:hover {
+    outline: #000000 solid 2px;
+    padding: 3px;
+}
+
+.lupin:hover {
+    outline: #1a1b3f solid 3px;
+}
+
+.seccion {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+
+}
+
+.seccion:hover {
+    outline: #000000 solid 2px;
+    padding: 3px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  background-color: #3b5b8c;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column2 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  background-color: #3b5b8c;
+  border: #000000 solid 2px;
+}
+
+.row {
+  border: #000000 solid 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
