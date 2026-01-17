@@ -2,23 +2,15 @@
   box-sizing: border-box;
 }
 
-  
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #beaa66;
+  background-image: url(images/fondo.png);
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0%;
   border-width: 1px;
   border-style: solid;
-
 }
-
-.context {
-  background-color: #6f8a9b;
-  padding: 20px;
-  text-align: center;
-  font-size: 25px;
-} 
 
 .header {
   display: flex;
@@ -27,124 +19,103 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url(images/layout.jpg);
-  padding: 10px;
+  padding: 1px;
   font-size: 15px;
+  border-bottom: 10px solid #855b21;
+}
+
+.oracion {
+  font-family: "noto sans", sans-serif;
+  background-image: url(images/ai.jfif);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
 }
 
 .menu {
     display: flex;
-    gap: 20px;
-}
-
-.dropdown {
-    position: relative;
-}
-
-/* Contenido oculto */
-.dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 180px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    display: none;
-    flex-direction: column;
-}
-
-/* Links internos */
-.dropdown-content a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-
-/* Mostrar al pasar el cursor */
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-
-/* Hover bonito */
-.dropdown-content a:hover {
-    background: #f0f0f0;
-}
-
-nav {
-    display: flex;
-    align-items: center; /* 🔑 clave */
-    gap: 20px;
-}
-
-.niño_jesus {
-    background-color: green;
+    gap: 5px;
 }
 
 .link {
-  margin: 15px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: color 0.6s;
+  z-index: 1;
+  cursor: pointer;
+  margin: 3px;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.link:hover {
-    outline: #000000 solid 2px;
-    padding: 3px;
+.viene {
+  background-image: url(images/ChatGPT\ Image\ 16\ ene\ 2026\,\ 01_51_30.png);
+  background-size: cover;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.lupin:hover {
-    outline: #1a1b3f solid 3px;
-}
-
-.seccion {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 15px;
-
-}
-
-.seccion:hover {
-    outline: #000000 solid 2px;
-    padding: 3px;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  background-color: #3b5b8c;
-}
-
-.column img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.column2 {
-  float: left;
+.context {
   width: 100%;
-  padding: 10px;
-  height: 150px;
-  background-color: #3b5b8c;
+  height: 650px;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
 }
 
-.row {
-  
+.ore {
+  width: 350px;
+  height: 400px;
+  background-image: url(images/12.jfif);
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  position: absolute;
+  left: 60px;
+  margin-top: 100px;
+  box-shadow: #382f22 0px 3px 6px 0px, #382f22 1px 4px 10px 0px;
+  z-index: 1;
+
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.diario {
+  width: 290px;
+  height: 350px;
+  background-color: antiquewhite;
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.book {
+  width: 70%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  mask-image: radial-gradient(closest-side, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(closest-side, black 40%, transparent 100%);
+  left: 350px;
+  bottom: 150px;
 }
 
 .footer {
   background-color: #ffffff;
   padding: 10px;
   text-align: center;
+}
+
+
+
+.niño_jesus {
+    background-color: green;
 }
 
 @media (max-width: 600px) {
