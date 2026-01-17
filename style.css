@@ -58,14 +58,17 @@ body {
   align-content: center;
   text-align: center;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .context {
   width: 100%;
-  height: 650px;
+  height: 550px;
   display: flex;
   flex-flow: row wrap;
   position: relative;
+  box-sizing: border-box;
+  
 }
 
 .ore {
@@ -84,12 +87,12 @@ body {
 }
 
 .diario {
-  width: 290px;
-  height: 350px;
-  background-color: antiquewhite;
+  width: 300px;
+  height: 370px;
+  background-color: rgb(230, 211, 187);
   display: flex;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
 }
@@ -104,11 +107,97 @@ body {
   -webkit-mask-image: radial-gradient(closest-side, black 40%, transparent 100%);
   left: 350px;
   bottom: 150px;
+  top: 150px;
+}
+
+.context2 {
+  width: 100%;
+  height: 400px;
+  background-color: antiquewhite;
+  border: 3px solid rgb(165, 112, 42);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.lul {
+  margin: 10px 0px 0px 60px;
+  position: relative;
+  display: inline-block;
+}
+
+.lul::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 62%;
+  height: 1px;
+  background-color: black;
+}
+
+.destacadas {
+  width: 250px;
+  height: 250px;
+  background-color: #e2bd89;
+  border-radius: 5%;
+}
+
+.destacadas2 {
+  width: 250px;
+  height: 320px;
+  background-color: #b89d79;
+  border-radius: 5%;
+}
+
+.columnas {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin: 0px 30px 30px 60px;
+  align-items: center;
+  
+}
+
+.imagn {
+  width: 250px;
+  height: 150px;
+  background-image: url(images/maria.jfif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.maria {
+    position: absolute;
+    top: 1030px;
+    left: 75px;
+}
+
+.maria2 {
+    position: absolute;
+    top: 1090px;
+    left: 75px;
+}
+
+.maria3 {
+    position: absolute;
+    top: 1085px;
+    left: 220px;
+}
+
+.imagn2 {
+  width: 250px;
+  height: 150px;
+  background-image: url(images/three-kings-with-crowns.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .footer {
-  background-color: #ffffff;
-  padding: 10px;
+  background-image: url(images/superficie-de-cuero-marrón-clara-la-textura-109810903.webp);
+  padding: 5px;
   text-align: center;
 }
 
