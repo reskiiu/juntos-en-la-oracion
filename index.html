@@ -1,54 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Inicio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fe y Reflexión</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="header">
-    <h1 class="oracion">PASOS DE</h1>
-    <nav class="menu">
-    <a class="link" href="#">Inicio</a>
-    <a class="link" href="#">Oraciones ▾</a>
-    <a class="link" href="villancicos.html">Villancicos ▾</a>
-    <a class="link">iniciar seccion</a>
-    </nav>
-</div>
 
-    <h2 class="viene">Lo que viene de Dios, es GRATIS; lo que viene del hombre, siempre está cargado de exigencias". </h2>
+<header class="header">
+  <div class="logo">
+    <h1>Fe y Reflexión</h1>
+  </div>
 
- <div class="context">
-    <div class="ore"> 
-        <div class="diario"></div>
+  <nav class="menu">
+    <a href="index.html" class="link">Inicio</a>
+    
+    <div class="dropdown">
+      <button class="link dropbtn">Oraciones ▾</button>
+      <div class="dropdown-content">
+        <a href="#">Oraciones diarias</a>
+        <a href="#">Por necesidad</a>
+        <a href="#">Por protección</a>
+        <div class="dropdown">
+          <a href="novenas.html" class="link dropbtn">Novenas</a>
+        </div>
+      </div>
     </div>
-    <img class="book" src="images/libro.jpg" alt="libro ">
- </div>
 
- <div class="context2">
-    <h3 class="lul">Oraciones destacadas</h3>
-    <div class="columnas">
-        <div class="destacadas">
-            <div class="imagn"></div>
-            <div class="maria">Oracion a la virgen maria</div>
-            <div class="maria2">17/01/2026</div>
-            <button class="maria3"> click aqui</button>
-        </div>
-        <div class="destacadas">
-            <div class="imagn2"> </div>
-        </div>
-        <div class="destacadas2">
-            <div class="imagn3"> </div>
-        </div>
+    <div class="dropdown">
+      <button class="link dropbtn">Canciones ▾</button>
+      <div class="dropdown-content">
+        <a href="niño_jesus.html">niño jesus</a>
+        <a href="#">Adoración</a>
+        <a href="villancicos.html">Villancicos</a>
+      </div>
     </div>
- </div>
 
-<div class="footer">
-  <p>hagamoslanovena@gmail.com</p>
-  <p>Derechos reservados</p>
-</div>
+    <a href="#" class="link">Iniciar sesión</a>
+  </nav>
+</header>
 
+<section class="frase">
+  <p>
+    “Lo que viene de Dios es gratis; lo que viene del hombre siempre está cargado de exigencias.”
+  </p>
+</section>
+
+<section class="context">
+
+  <div class="oracion-card">
+    <h2>Oración del Día</h2>
+    <p class="placeholder">
+      Aquí se mostrará la oración generada diariamente con IA.
+    </p>
+    <button>Ver más oraciones</button>
+  </div>
+
+  <div class="book-container">
+    <img src="images/libro.jpg" alt="Biblia abierta" class="book">
+  </div>
+
+</section>
+
+<section class="destacadas-section">
+  <h2>Oraciones Destacadas</h2>
+
+   <div class="grid">
+
+    <div class="card">
+      <img src="images/maria.jfif">
+      <h3>Oración a la Virgen María</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+
+    <div class="card">
+      <img src="images/three-kings-with-crowns.jpg">
+      <h3>Oración de Gratitud</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+
+    <div class="compartir">
+      <h2>Comparte tu Testimonio</h2>
+      <p class="tuqui">
+        ¿Has experimentado el poder de la oración en tu vida?
+        Comparte tu historia con nosotros.
+      </p>
+
+      <form action="#" method="POST" enctype="multipart/form-data">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="correo@gmail.com">
+
+    <label for="mensaje">Tu testimonio</label>
+    <textarea 
+      id="mensaje" 
+      name="mensaje" 
+      rows="6"
+      placeholder="Escribe aquí tu experiencia..."
+    ></textarea>
+
+    <label for="archivo">Adjuntar archivo</label>
+    <input 
+      type="file" 
+      id="archivo" 
+      name="archivo"
+      accept=".pdf,.doc,.docx,.txt.jpg,.jpeg,.png,.mp4,.avi"
+    >
+
+    <button type="submit">
+      Enviar testimonio
+    </button>
+
+     </form>
+    </div>
+
+    <div class="card">
+      <img src="images/maria.jfif">
+      <h3>Oración de Protección</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+
+    <div class="card">
+      <img src="images/three-kings-with-crowns.jpg">
+      <h3>Oración de Fe</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+
+    <div class="card">
+      <img src="images/maria.jfif">
+      <h3>Oración en la adversidad</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+   
+    <div class="card">
+      <img src="images/three-kings-with-crowns.jpg">
+      <h3>Oración por la familia</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+    <div class="card">
+      <img src="images/maria.jfif">
+      <h3>Oración de Protección</h3>
+      <p>17/01/2026</p>
+      <button>Leer más</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="acciones">
+
+  <div class="accion-box">
+    <h3>conoce mas sobre nosotros </h3>
+    <button onclick="location.href='nosotros.html'">
+  Click aquí
+</button>
+  </div>
+
+
+
+</section>
+
+<footer class="footer">
+  <p>© 2026 Fe y Reflexión</p>
+  <p>Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
