@@ -24,7 +24,7 @@
         <a href="#">Por necesidad</a>
         <a href="#">Por protección</a>
         <div class="dropdown">
-          <a href="novenas.html" class="link dropbtn">Novenas</a>
+          <a href="novena/novena.html" class="link dropbtn">Novenas</a>
         </div>
       </div>
     </div>
@@ -32,14 +32,9 @@
     <div class="dropdown">
       <button class="link dropbtn">Canciones ▾</button>
       <div class="dropdown-content">
-        <a href="niño_jesus.html">niño jesus</a>
+        <a href="novena/nino_jesus/nino_jesus.html">niño jesus</a>
         <a href="#">Adoración</a>
-        <a href="villancicos.html">Villancicos</a>
-      </div>
-    </div>
-
-    <a href="#" class="link">Iniciar sesión</a>
-  </nav>
+            <a href="canciones/villancicos.html">Villancicos</a>
 </header>
 
 <section class="frase">
@@ -107,12 +102,15 @@
     ></textarea>
 
     <label for="archivo">Adjuntar archivo</label>
-    <input 
-      type="file" 
-      id="archivo" 
-      name="archivo"
-      accept=".pdf,.doc,.docx,.txt.jpg,.jpeg,.png,.mp4,.avi"
-    >
+    <label class="file-upload" for="archivo">
+      <span>Seleccionar archivo</span>
+      <input 
+        type="file" 
+        id="archivo" 
+        name="archivo"
+        accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png,.mp4,.avi"
+      >
+    </label>
 
     <button type="submit">
       Enviar testimonio
@@ -178,3 +176,4 @@
 
 </body>
 </html>
+
