@@ -1,0 +1,11 @@
+{
+  "name": "juntos-en-la-oracion",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node backend/src/utils/mongodb.js"
+  },
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}
