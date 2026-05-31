@@ -17,7 +17,7 @@
     <div class="dropdown">
       <button class="link dropbtn">Oraciones ▾</button>
       <div class="dropdown-content">
-        <a href="#">Oraciones diarias</a>
+        <a href="../../oraciones/oraciones_diarias/oraciones_dia_dia.html" class="link dropbtn">Oraciones diarias</a>
 
         <div class="dropdown">
           <a href="../../oraciones/novena/novena.html" class="link dropbtn">Novenas</a>
@@ -27,7 +27,6 @@
     <div class="dropdown">
       <button class="link dropbtn">Canciones ▾</button>
       <div class="dropdown-content">
-        <a href="../../oraciones/novena/nino_jesus/nino_jesus.html">niño jesus</a>
         <a href="../../canciones/villancicos.html">Villancicos</a>
       </div>
     </div>
@@ -40,12 +39,69 @@
   <article class="section">
     <p class="section-content">Aquí va la letra y reflexión de la canción “Tutaina”. Un mensaje para cuidar la armonía y la esperanza en familia.</p>
   </article>
+
+<section class="music-player">
+
+  <audio id="cancion">
+    <source src="../../audios/tutaina.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-player--progress">
+    <input type="range" value="0" id="progress">
+  </div>
+
+  <div class="music-player--controls">
+    <button class="controls--play-button" id="play-pause">
+      <i class="bi bi-play-fill" id="iconoControl"></i>
+    </button>
+  </div>
+
+  <div class="lettertu" >
+    <p>
+      Tutaina tuturumá
+      tutaina tuturumaina
+      tutaina tuturumá turumá
+      tutaina tuturumaina
+    </p>
+    <p>
+      Los pastores de Belén
+vienen a adorar al niño
+la Virgen y San José
+los reciben con cariño
+    </p>
+    <p>
+      Tutaina...
+    </p>
+    <p>
+      Tres reyes vienen también
+con incienso, mirra y oro
+a ofrendar a Dios su bien
+como el más grande tesoro
+    </p>
+    <p>
+      Tutaina...
+    </p>
+    <p>
+      Vamos todos a cantar
+con amor y alegría
+porque acaba de llegar
+de los cielos el Mesías
+    </p>
+    <p>
+      Tutaina...
+    </p>
+  </div>
+    
+</section>
+
+
 </div>
 
 <footer class="footer">
   <p>© 2026 Fe y Reflexión</p>
   <p>Todos los derechos reservados</p>
 </footer>
+<script src="../../app.js"></script>
 </body>
 </html>
 

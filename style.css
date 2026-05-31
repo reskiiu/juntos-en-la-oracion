@@ -1,12 +1,17 @@
-* {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+  
 body {
   font-family: "Segoe UI", sans-serif;
-  background-image: url('images/FLORES\ DEL\ CAMPO\ SILVESTRE.png');
+  background-image: linear-gradient(
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)
+    ), url('images/FLORES\ DEL\ CAMPO\ SILVESTRE.png');
   background-size: cover;
   color: #5A3E2B;
   height: auto;
@@ -519,6 +524,7 @@ article {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 .nino-jesus .container {
   flex: 1 0 auto;
@@ -536,7 +542,82 @@ article {
   margin-top: 15px;
   margin-left: 400px;
 }
-  
+
+.music-player {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px -30px rgba(0,0,0,0.5);
+  width: 520px;
+  padding: 25px;
+  margin: 40px auto;
+}
+
+.music-player--progress {
+  margin-bottom: 25px;
+}
+
+#progress {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 10px;
+  background: rgba(165,165,165,0.3);
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #444;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.music-player--controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls--play-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background: #444;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.controls--play-button:hover {
+  transform: scale(1.08);
+  background: #666;
+}
+
+.controls--play-button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lettertu {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #5A3E2B;
+  margin-top: 30px;
+}
+
+.lettertu p {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 768px) {
 
   .grid {
